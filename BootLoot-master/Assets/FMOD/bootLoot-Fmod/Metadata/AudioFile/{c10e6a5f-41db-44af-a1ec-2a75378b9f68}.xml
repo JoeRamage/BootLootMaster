@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{c10e6a5f-41db-44af-a1ec-2a75378b9f68}">
+        <property name="assetPath">
+            <value>e_Foot 3.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.33172916666666669</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{040b889c-2fd0-4275-a2b1-5a9470396c61}</destination>
+        </relationship>
+    </object>
+</objects>

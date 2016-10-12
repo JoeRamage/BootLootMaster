@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="Event" id="{302af83f-fc14-4876-a37f-e61feab8cde4}"/>
+    <object class="MasterTrack" id="{4b36708e-2cba-4a13-8571-d1d2e7cbdbcf}"/>
+    <object class="MixerInput" id="{1d46d23e-eeb6-43c2-8449-35133959ccda}"/>
+    <object class="EventAutomatableProperties" id="{bddfa4ec-02fc-4177-a361-e8e4c124bf72}"/>
+    <object class="MarkerTrack" id="{c8b70b42-2be1-4121-8dcb-a5fb2c1b7d0b}"/>
+    <object class="GroupTrack" id="{c52f73bc-33ef-42fd-852d-7ae36b66c744}"/>
+    <object class="Timeline" id="{b4b74f4a-38f7-43a6-b8f1-982567399436}">
+        <property name="cursorPosition">
+            <value>0</value>
+        </property>
+        <property name="uiLastRulerScaleRatio">
+            <value>0.02461033634126333</value>
+        </property>
+    </object>
+    <object class="EventMixerMaster" id="{ebe2c456-4b63-4805-adfa-519797f98e78}">
+        <relationship name="input">
+            <destination>{4788d3be-59ac-4fe4-8026-bb7cec35ad3c}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{979c65f4-b652-4682-8093-2333b531f6a4}"/>
+    <object class="MixerBusPanner" id="{66f5ceef-ff86-4e19-ba15-9f239c2bda4f}"/>
+    <object class="EventMixerGroup" id="{4788d3be-59ac-4fe4-8026-bb7cec35ad3c}"/>
+    <object class="MixerBusEffectChain" id="{601b85f1-bea8-4721-bc20-bc80c9b84d64}"/>
+    <object class="MixerBusPanner" id="{1bee8688-63be-4dae-b559-1a30f734e4be}"/>
+    <object class="MixerBusFader" id="{f902d3f9-3864-41ec-b71f-f35c3fcd6dab}"/>
+    <object class="MixerBusEffectChain" id="{9badb1a1-fa9c-4779-b59e-cd416e6950c1}"/>
+    <object class="MixerBusPanner" id="{7c7558a5-91ec-4da9-9aa1-ccafc20184d1}"/>
+    <object class="MixerBusFader" id="{bc1acd60-73f2-4a98-bcc8-ac96b0a22203}"/>
+    <object class="SpatialiserEffect" id="{22f8ddbd-caa2-41b5-b31b-bddcb5a8ea2b}"/>
+    <object class="MixerBusFader" id="{61dda9b2-daf0-4994-8a0b-999b3db9b4e9}"/>
+</objects>
