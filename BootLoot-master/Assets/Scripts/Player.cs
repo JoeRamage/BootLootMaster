@@ -30,8 +30,8 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private LayerMask whatIsGround;
 
-    [SerializeField]
-    private bool isGrounded;
+
+    public bool isGrounded;
 
     private bool jump;
 

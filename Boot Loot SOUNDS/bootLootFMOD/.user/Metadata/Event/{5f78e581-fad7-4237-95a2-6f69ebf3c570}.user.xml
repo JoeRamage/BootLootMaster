@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="Event" id="{5f78e581-fad7-4237-95a2-6f69ebf3c570}"/>
+    <object class="MasterTrack" id="{31cb685a-ee3d-427b-aa3e-d9682fc9a717}"/>
+    <object class="MixerInput" id="{464eb7d2-acf8-4f32-b30a-c5a3a8a29e05}"/>
+    <object class="EventAutomatableProperties" id="{8195d8b2-0ebc-4631-a678-ed5bd00cd80d}"/>
+    <object class="MarkerTrack" id="{48b3242c-4931-431b-9cd5-01286e2d25cf}"/>
+    <object class="GroupTrack" id="{55f81ed7-b4a8-4f60-ac53-0e5177483cc6}"/>
+    <object class="Timeline" id="{0c7b4188-27bb-4fd4-bd1e-de90c7b5cd84}">
+        <property name="cursorPosition">
+            <value>238.96177358490564</value>
+        </property>
+        <property name="uiLastRulerScaleRatio">
+            <value>0.22690316838732638</value>
+        </property>
+    </object>
+    <object class="EventMixerMaster" id="{e2b789f7-02c6-4472-b607-5a774dcba6f4}">
+        <relationship name="input">
+            <destination>{71bfc481-d301-4cc5-b99f-f3ca3a553680}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{ac75e410-a9cb-44b8-bf04-1061d5c3f3ee}"/>
+    <object class="MixerBusPanner" id="{41e2d759-5d99-4556-a081-264f1b19ac93}"/>
+    <object class="SingleSound" id="{b5459f0f-2f17-4460-be8c-9b88b71c02a5}"/>
+    <object class="EventMixerGroup" id="{71bfc481-d301-4cc5-b99f-f3ca3a553680}"/>
+    <object class="MixerBusEffectChain" id="{d153509b-ecc0-4ccd-b1e5-c5ed7d0e296c}"/>
+    <object class="MixerBusPanner" id="{da76a0fe-91dc-4b12-b037-e1ddcf0e33ef}"/>
+    <object class="MixerBusFader" id="{456b9fbb-7bcb-481e-9971-f8f2f33a0b87}"/>
+    <object class="MixerBusEffectChain" id="{b8b0387b-8667-40fe-9dc8-20806416b4e2}"/>
+    <object class="MixerBusPanner" id="{e1f5a0ca-1b05-4187-b6ca-068106f76f0a}"/>
+    <object class="MixerBusFader" id="{99e62696-152a-4ec0-8cc0-8b064cee9500}"/>
+    <object class="MixerBusFader" id="{8cecb09e-15c5-45be-974e-7abf9057847e}"/>
+</objects>

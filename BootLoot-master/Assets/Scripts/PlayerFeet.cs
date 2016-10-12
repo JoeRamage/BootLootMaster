@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlayerFeet : MonoBehaviour {
 
-	[SerializeField]
-	private float terrainType;
+
+	public float terrainType;
 
 	// Use this for initialization
 	void Start () {
