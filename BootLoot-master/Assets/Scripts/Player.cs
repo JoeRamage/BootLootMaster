@@ -126,8 +126,9 @@ public class Player : MonoBehaviour {
 
     void HandleInput()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Jump"))
         {
+			Debug.Log ("Fire 1 button pressed");
             jump = true;
         }
 

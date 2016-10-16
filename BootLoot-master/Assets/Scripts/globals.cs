@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class globals : MonoBehaviour {
 
@@ -25,7 +26,8 @@ public class globals : MonoBehaviour {
 	public float powerDrainSpeed = 2;
 	public float powerChargeSpeed = 2;
 
-    public int blueCollTotal = 0;
+    public int coinTotal = 0;
+	public string coinTotalString;
     public int pinkCollTotal = 0;
 
     // Use this for initialization
@@ -35,6 +37,8 @@ public class globals : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		coinTotalString = coinTotal.ToString ();
+		GameObject.Find ("coinAmountText").GetComponent<Text> ().text = coinTotalString;
 		/*
 		if (health == 5) {
 			h4Obj.SetActive(true);
