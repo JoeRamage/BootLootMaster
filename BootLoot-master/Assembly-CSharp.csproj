@@ -62,6 +62,15 @@
      <Compile Include="Assets\Scripts\playerResets.cs" />
      <Compile Include="Assets\Scripts\playerSounds.cs" />
      <Compile Include="Assets\Scripts\shop\shopDoor.cs" />
+     <Compile Include="Assets\Scripts\wormScripts\newWorm.cs" />
+     <Compile Include="Assets\Scripts\wormScripts\worm.cs" />
+     <Compile Include="Assets\Scripts\wormScripts\wormDamage.cs" />
+     <Compile Include="Assets\Scripts\wormScripts\wormDamageTrig.cs" />
+     <Compile Include="Assets\Scripts\wormScripts\wormDead.cs" />
+     <Compile Include="Assets\Scripts\wormScripts\wormHead.cs" />
+     <Compile Include="Assets\Scripts\wormScripts\wormHeadTrig.cs" />
+     <Compile Include="Assets\Scripts\wormScripts\wormKicked.cs" />
+     <Compile Include="Assets\Scripts\wormScripts\wormPull.cs" />
      <None Include="Assets\FMOD\bootLoot-Fmod\Metadata\Event\{65e5a1c5-cb71-4e78-bc12-3b8d523751cf}.xml" />
      <None Include="Assets\FMOD\bootLoot-Fmod\Metadata\AudioFile\{c5c3bf38-a4ff-4812-9fd8-881fd2c8ded7}.xml" />
      <None Include="Assets\FMOD\bootLoot-Fmod\Metadata\Event\{abff77cc-cff6-4fca-8e96-7a9ee77e7c65}.xml" />
