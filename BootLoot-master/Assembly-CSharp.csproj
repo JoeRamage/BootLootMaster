@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\globals.cs" />
      <Compile Include="Assets\Scripts\highJump.cs" />
      <Compile Include="Assets\Scripts\jackie\jackieDoor.cs" />
+     <Compile Include="Assets\Scripts\jackie\jackieHouse.cs" />
      <Compile Include="Assets\Scripts\movingPlat.cs" />
      <Compile Include="Assets\Scripts\oslo\osloDoor.cs" />
      <Compile Include="Assets\Scripts\playerResets.cs" />
