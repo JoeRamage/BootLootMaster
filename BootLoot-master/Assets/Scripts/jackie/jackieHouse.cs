@@ -45,6 +45,9 @@ public class jackieHouse : MonoBehaviour {
 
 	public float moveSpeed;
 	[SerializeField]
+	private Vector3 playerDirection;
+
+	[SerializeField]
 	private Vector3 direction;
 
 	private bool move = false;
@@ -53,13 +56,18 @@ public class jackieHouse : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		direction = new Vector3 (1, 0, 0);
+		playerDirection = new Vector3 (-1, 0, 0);
+
+		transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);
 
 		StartCoroutine (jackieHouseFirst ());
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		direction = playerDirection;
+		
 		if (move) {
 			transform.Translate (direction * moveSpeed);
 			GameObject.Find ("controllerCollider").GetComponent<Player> ().MyAnimator.SetFloat ("Speed", 0.2f);
