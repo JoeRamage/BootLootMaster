@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:BootLoot-master/Assets/Animations/Enemies.meta
 guid: 2ccb44fde5add4926afb8d0573133035
 folderAsset: yes
 timeCreated: 1476660590
+=======
+guid: b90c78a8b1b9f4076907c7e3cfdae93c
+timeCreated: 1476756198
+>>>>>>> Stashed changes:BootLoot-master/Assets/StreamingAssets/Master Bank.bank.meta
 licenseType: Free
 DefaultImporter:
   userData: 

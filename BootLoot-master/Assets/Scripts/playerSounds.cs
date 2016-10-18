@@ -3,17 +3,18 @@ using System.Collections;
 
 public class playerSounds : MonoBehaviour {
 
-
+	public bool landed = false; 
 
 	[FMODUnity.EventRef]
-	public string footsteps = "event:/SFX/footsteps";
+	public string footsteps = "event:/playersfx/footsteps";
 	FMOD.Studio.EventInstance footstepsEv; 
 	FMOD.Studio.ParameterInstance footstepsParam; 
 
 	[FMODUnity.EventRef]
-	public string landingSounds = "event:/SFX/landingSounds";
+	public string landingSounds = "event:/playersfx/landing";
 	FMOD.Studio.EventInstance landingSoundsEv; 
 	FMOD.Studio.ParameterInstance landingSoundsParam;
+
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +23,7 @@ public class playerSounds : MonoBehaviour {
 		footstepsEv.getParameter ("surfaceChange", out footstepsParam);
 
 		landingSoundsEv = FMODUnity.RuntimeManager.CreateInstance (landingSounds);
-		landingSoundsEv.getParameter ("landChange", out landingSoundsParam);
+		landingSoundsEv.getParameter ("surfaceChange", out landingSoundsParam);
 	
 	}
 	
@@ -32,11 +33,10 @@ public class playerSounds : MonoBehaviour {
 		footstepsParam.setValue (GameObject.Find("feetColl").GetComponent<PlayerFeet>().terrainType); 
 		landingSoundsParam.setValue (GameObject.Find ("feetColl").GetComponent<PlayerFeet>().terrainType);
 
-		if (GameObject.Find ("controllerCollider").GetComponent<Player> ().isGrounded) {
-			Debug.Log ("landSounds should be playing");
-			landingSoundsEv.start (); 
-		}
-	
+		//if (GameObject.Find ("controllerCollider").GetComponent<Player> ().isGrounded) {
+			//Debug.Log ("landSounds should be playing");
+			//landingSoundsEv.start ();
+		//}
 	}
 
 	public void playfootsteps (){
@@ -47,6 +47,20 @@ public class playerSounds : MonoBehaviour {
 		}
 	}
 
-		
+	void OnTriggerStay2D (Collider2D other){
+		if (other.tag == "music1") {
+			GameObject.Find("audioZones").GetComponent<background>().musicState = 0.5f;
+		}
+
+		if (other.tag == "music2"){
+			GameObject.Find("audioZones").GetComponent<background>().musicState = 1.5f; 
+		}
+
+		if (other.tag == "music3") {
+			GameObject.Find("audioZones").GetComponent<background>().musicState= 2.5f;
+		}
+	}
+
+
 
 }
