@@ -4,7 +4,9 @@ using System.Collections;
 public class jackieHouse : MonoBehaviour {
 
 	[SerializeField]
-	private GameObject textBox;
+	private GameObject bTextBox;
+	[SerializeField]
+	private GameObject jTextBox;
 	[SerializeField]
 	private GameObject b1;
 	[SerializeField]
@@ -36,9 +38,11 @@ public class jackieHouse : MonoBehaviour {
 	[SerializeField]
 	private GameObject j10;
 	[SerializeField]
-	private GameObject b11;
+	private GameObject j11;
 	[SerializeField]
-	private GameObject btn;
+	private GameObject bBtn;
+	[SerializeField]
+	private GameObject jBtn;
 
 	[SerializeField]
 	private int textState = 0;
@@ -90,6 +94,26 @@ public class jackieHouse : MonoBehaviour {
 			if(textState == 3 && tPressed) {
 				StartCoroutine (jackieHouseThird());
 				tPressed = false;
+		    }
+
+			if(textState == 4 && tPressed) {
+				StartCoroutine (jackieHouseForth());
+				tPressed = false;
+		}
+
+		if(textState == 5 && tPressed) {
+			StartCoroutine (jackieHouseFifth());
+			tPressed = false;
+		}
+
+		if(textState == 6 && tPressed) {
+			StartCoroutine (jackieHouseSixth());
+			tPressed = false;
+		}
+
+		if(textState == 7 && tPressed) {
+			jackieFirstTextEnd();
+			tPressed = false;
 		}
 	}
 
@@ -99,50 +123,101 @@ public class jackieHouse : MonoBehaviour {
 		yield return new WaitForSeconds (0.50f);
 		move = false;
 		yield return new WaitForSeconds (0.75f);
-		textBox.SetActive (true);
+		bTextBox.SetActive (true);
 		b1.SetActive (true);
 		yield return new WaitForSeconds (2);
 		b1.SetActive (false);
 		b12.SetActive (true);
 		yield return new WaitForSeconds (1);
-		btn.SetActive (true);
-		textState = 1;
+		bBtn.SetActive (true);
+		textState = 2;
 	}
 
 	IEnumerator jackieHouseSecond() {
 		move = true;
-		btn.SetActive (false);
+		bBtn.SetActive (false);
 		b12.SetActive (false);
-		textBox.SetActive (false);
+		bTextBox.SetActive (false);
 		yield return new WaitForSeconds (0.50f);
 		move = false;
-		textBox.SetActive (true);
+		bTextBox.SetActive (true);
 		b3.SetActive (true);
 		yield return new WaitForSeconds (0.50f);
-		btn.SetActive (true);
+		bBtn.SetActive (true);
 		textState = 3;
 	}
 
 	IEnumerator jackieHouseThird() {
 		move = true;
-		btn.SetActive (false);
+		bBtn.SetActive (false);
 		b12.SetActive (false);
 		b3.SetActive (false);
-		textBox.SetActive (false);
+		bTextBox.SetActive (false);
 		yield return new WaitForSeconds (0.50f);
 		move = false;
 		yield return new WaitForSeconds (0.50f);
-		textBox.SetActive (true);
+		jTextBox.SetActive (true);
 		j2.SetActive (true);
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (2f);
 		j2.SetActive (false);
 		j3.SetActive (true);
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (2f);
 		j3.SetActive (false);
+		j4.SetActive (true);
+		yield return new WaitForSeconds (2f);
+		jBtn.SetActive (true);
+		textState = 4;
+	}
+
+	IEnumerator jackieHouseForth() {
+		jBtn.SetActive (false);
+		jTextBox.SetActive (false);
+		j4.SetActive (false);
+		bTextBox.SetActive (true);
 		b2.SetActive (true);
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (2);
 		b2.SetActive (false);
 		b21.SetActive (true);
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (2);
+		bBtn.SetActive (true);
+		textState = 5;
 	}
+
+	IEnumerator jackieHouseFifth() {
+		bBtn.SetActive (false);
+		bTextBox.SetActive (false);
+		b21.SetActive (false);
+		jTextBox.SetActive (true);
+		j5.SetActive (true);
+		yield return new WaitForSeconds (2);
+		j5.SetActive (false);
+		j6.SetActive (true);
+		yield return new WaitForSeconds (2);
+		j6.SetActive (false);
+		jTextBox.SetActive (false);
+		textState = 6;
+	}
+
+	IEnumerator jackieHouseSixth() {
+		jTextBox.SetActive (true);
+		j7.SetActive (true);
+		yield return new WaitForSeconds (2);
+		j7.SetActive (false);
+		j8.SetActive (true);
+		yield return new WaitForSeconds (2);
+		j8.SetActive (false);
+		j81.SetActive (true);
+		yield return new WaitForSeconds (2);
+		jBtn.SetActive (true);
+		textState = 7;
+	}
+
+	void jackieFirstTextEnd() {
+		jTextBox.SetActive (false);
+		j81.SetActive (false);
+		jBtn.SetActive (false);
+		textState = 8;
+	}
+
+
 }
