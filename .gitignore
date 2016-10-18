@@ -74,6 +74,7 @@ BootLoot-master/Library/metadata/00/00000000000000003000000000000000
 
 BootLoot-master/Library/metadata/00/00000000000000003000000000000000
 
+<<<<<<< Updated upstream
 *.backup
 
 BootLoot-master/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
@@ -95,3 +96,8 @@ BootLoot-master/Temp/UnityTempFile-b6881163147ac4454b7252f0a6a99259
 BootLoot-master/Library/ScriptAssemblies/Assembly-CSharp.dll
 
 BootLoot-master/Temp/__Backupscenes/0.backup
+=======
+BootLoot-master/fmod_editor.log
+
+BootLoot-master/Temp/UnityTempFile-3cf385460984645b69bb91cb50033978
+>>>>>>> Stashed changes

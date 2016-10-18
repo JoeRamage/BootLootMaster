@@ -90,7 +90,7 @@
             <value>82.311836734693884</value>
         </property>
         <property name="pitch">
-            <value>-0.699999988</value>
+            <value>-1</value>
         </property>
         <relationship name="audioFile">
             <destination>{1065357c-a713-4c2f-affe-0ed71ad04d21}</destination>
@@ -98,7 +98,7 @@
     </object>
     <object class="EventMixerGroup" id="{ac0fb604-b909-4d95-9a35-72af36a0a000}">
         <property name="volume">
-            <value>5</value>
+            <value>3</value>
         </property>
         <property name="name">
             <value>Guitar</value>
