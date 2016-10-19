@@ -95,3 +95,25 @@ BootLoot-master/Temp/UnityTempFile-b6881163147ac4454b7252f0a6a99259
 BootLoot-master/Library/ScriptAssemblies/Assembly-CSharp.dll
 
 BootLoot-master/Temp/__Backupscenes/0.backup
+
+BootLoot-master/fmod_editor.log
+
+BootLoot-master/Assets/Scripts/jackie/jackieHouse.cs
+
+*.meta
+
+BootLoot-master/Assets/FMOD/bootLoot-Fmod/Metadata/MixerView.meta
+
+BootLoot-master/Assets/FMOD/bootLoot-Fmod/Metadata/Snapshot.meta
+
+BootLoot-master/Assets/FMOD/bootLoot-Fmod/Metadata/VCA.meta
+
+BootLoot-master/Assets/FMOD/bootLoot-Fmod/Plugins.meta
+
+BootLoot-master/Assembly-CSharp.csproj
+
+BootLoot-master/Assembly-CSharp-firstpass.csproj
+
+BootLoot-master/Assembly-CSharp-Editor.csproj
+
+BootLoot-master/Assembly-CSharp-Editor-firstpass.csproj

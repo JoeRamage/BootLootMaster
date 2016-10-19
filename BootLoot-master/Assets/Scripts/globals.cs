@@ -30,6 +30,8 @@ public class globals : MonoBehaviour {
 	public string coinTotalString;
     public int pinkCollTotal = 0;
 
+	public bool jackieVisited = false;
+
     // Use this for initialization
     void Start () {
 	
