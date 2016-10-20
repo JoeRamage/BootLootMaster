@@ -10,6 +10,10 @@ public class background : MonoBehaviour {
 	FMOD.Studio.EventInstance musicAdaptEv; 
 	FMOD.Studio.ParameterInstance musicAdaptParam;
 
+	void Awake() {
+		DontDestroyOnLoad(transform.gameObject);
+	}
+
 	// Use this for initialization
 	void Start () {
 	

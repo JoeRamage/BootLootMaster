@@ -47,20 +47,4 @@ public class playerSounds : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerStay2D (Collider2D other){
-		if (other.tag == "music1") {
-			GameObject.Find("audioZones").GetComponent<background>().musicState = 0.5f;
-		}
-
-		if (other.tag == "music2"){
-			GameObject.Find("audioZones").GetComponent<background>().musicState = 1.5f; 
-		}
-
-		if (other.tag == "music3") {
-			GameObject.Find("audioZones").GetComponent<background>().musicState= 2.5f;
-		}
-	}
-
-
-
 }
