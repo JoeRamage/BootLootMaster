@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{431f82b6-ab4d-4c02-a324-7859668556f2}">
         <relationship name="selectables">
-            <destination>{6ee60796-170d-43b6-80e9-2f81609357fe}</destination>
+            <destination>{45722974-0861-4e1c-b650-1ac58e058c98}</destination>
         </relationship>
         <relationship name="uiLastParameterSelection">
             <destination>{6059aed8-83c2-4c58-996c-384cd90949b6}</destination>
@@ -15,7 +15,7 @@
     <object class="GroupTrack" id="{45722974-0861-4e1c-b650-1ac58e058c98}"/>
     <object class="Timeline" id="{6059aed8-83c2-4c58-996c-384cd90949b6}">
         <property name="cursorPosition">
-            <value>26.630581867388365</value>
+            <value>0</value>
         </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.040595399188092018</value>
@@ -38,4 +38,5 @@
     <object class="MixerBusPanner" id="{4e4d93f3-d144-42da-ad36-fdb17fbb3ffd}"/>
     <object class="MixerBusFader" id="{8978dc2a-2e3f-4e8f-a682-3f793efa75f4}"/>
     <object class="MixerBusFader" id="{98f38f75-d64d-4019-b7db-e6e3ee5af3b6}"/>
+    <object class="CompressorEffect" id="{147584e3-c338-4963-9207-443ae4dc36b7}"/>
 </objects>

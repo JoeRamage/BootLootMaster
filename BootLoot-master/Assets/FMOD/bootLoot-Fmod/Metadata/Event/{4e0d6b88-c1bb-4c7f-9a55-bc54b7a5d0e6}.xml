@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{4e0d6b88-c1bb-4c7f-9a55-bc54b7a5d0e6}">
         <property name="name">
-            <value>worm</value>
+            <value>wormSlide</value>
         </property>
         <property name="outputFormat">
-            <value>0</value>
+            <value>1</value>
         </property>
         <relationship name="mixer">
             <destination>{5a9dc2d7-7ab9-43bd-b6d0-483c4b6e24b9}</destination>
@@ -27,6 +27,9 @@
         </relationship>
         <relationship name="timeline">
             <destination>{ce0eae50-fcb2-4878-912e-28d001f4d01e}</destination>
+        </relationship>
+        <relationship name="parameters">
+            <destination>{fdff1365-e4d7-485d-82b1-85c5738c69fd}</destination>
         </relationship>
         <relationship name="banks">
             <destination>{372d9684-2248-4954-890a-e1228814a1cc}</destination>
@@ -59,11 +62,26 @@
     <object class="EventAutomatableProperties" id="{0ee4b453-f65b-42aa-8896-80577313a321}"/>
     <object class="MarkerTrack" id="{e0c70c08-f73b-462c-bf4d-186cb9a80307}"/>
     <object class="GroupTrack" id="{cd7360bc-a9da-4256-bab2-d1635a49374b}">
+        <relationship name="modules">
+            <destination>{8cca3686-e140-437c-99d8-3aaed650bc62}</destination>
+        </relationship>
         <relationship name="mixerGroup">
             <destination>{210b1151-469c-4154-9436-afb1d2a7ae73}</destination>
         </relationship>
     </object>
-    <object class="Timeline" id="{ce0eae50-fcb2-4878-912e-28d001f4d01e}"/>
+    <object class="Timeline" id="{ce0eae50-fcb2-4878-912e-28d001f4d01e}">
+        <relationship name="modules">
+            <destination>{8cca3686-e140-437c-99d8-3aaed650bc62}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{fdff1365-e4d7-485d-82b1-85c5738c69fd}">
+        <property name="name">
+            <value>surfaceChange</value>
+        </property>
+        <property name="maximum">
+            <value>3</value>
+        </property>
+    </object>
     <object class="EventMixerMaster" id="{ca5deb35-7afb-48be-9277-a5e91bbfe780}">
         <relationship name="effectChain">
             <destination>{014112de-a09c-4c30-b27b-16735b13214d}</destination>
@@ -81,9 +99,29 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{46a16afa-5981-49c2-939b-79927b5d796d}"/>
+    <object class="SingleSound" id="{8cca3686-e140-437c-99d8-3aaed650bc62}">
+        <property name="start">
+            <value>0</value>
+        </property>
+        <property name="length">
+            <value>0.60000000000000009</value>
+        </property>
+        <property name="timelockedOffset">
+            <value>14.956814604678133</value>
+        </property>
+        <property name="pitch">
+            <value>-2.60000014</value>
+        </property>
+        <relationship name="audioFile">
+            <destination>{da59806f-b5e9-42ec-be66-db1efb5b1782}</destination>
+        </relationship>
+    </object>
     <object class="EventMixerGroup" id="{210b1151-469c-4154-9436-afb1d2a7ae73}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <property name="name">
-            <value>Audio 1</value>
+            <value>Slide</value>
         </property>
         <relationship name="effectChain">
             <destination>{4094be14-ba95-43ed-9bb9-bcc9b1829ca4}</destination>
@@ -106,17 +144,23 @@
     <object class="MixerBusEffectChain" id="{4094be14-ba95-43ed-9bb9-bcc9b1829ca4}">
         <relationship name="effects">
             <destination>{76c4c499-3aa2-402b-829e-3de9b4c1effa}</destination>
+            <destination>{44419a50-f814-48b4-8b1b-c0d4082eef8f}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{ccc3a234-b1c4-42aa-a8e6-f36d36171264}"/>
     <object class="MixerBusFader" id="{18576660-5488-435f-b646-4cb0785dec86}"/>
     <object class="MixerSend" id="{1620fb2f-cd48-4613-a5e5-950b9849f870}">
         <property name="inputFormat">
-            <value>0</value>
+            <value>1</value>
         </property>
         <relationship name="mixerReturn">
             <destination>{91049b5a-7c9e-4cbc-a3cd-4ded03cc8937}</destination>
         </relationship>
     </object>
     <object class="MixerBusFader" id="{76c4c499-3aa2-402b-829e-3de9b4c1effa}"/>
+    <object class="CompressorEffect" id="{44419a50-f814-48b4-8b1b-c0d4082eef8f}">
+        <property name="gain">
+            <value>15.5</value>
+        </property>
+    </object>
 </objects>

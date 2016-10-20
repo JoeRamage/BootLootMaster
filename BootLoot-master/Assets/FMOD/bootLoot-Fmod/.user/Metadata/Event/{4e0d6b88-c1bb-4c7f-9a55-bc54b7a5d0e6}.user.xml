@@ -18,7 +18,12 @@
             <value>0</value>
         </property>
         <property name="uiLastRulerScaleRatio">
-            <value>0.040595399188092018</value>
+            <value>0.00056603773584905663</value>
+        </property>
+    </object>
+    <object class="GameParameter" id="{fdff1365-e4d7-485d-82b1-85c5738c69fd}">
+        <property name="uiLastRulerScaleRatio">
+            <value>0.0047021943573667714</value>
         </property>
     </object>
     <object class="EventMixerMaster" id="{ca5deb35-7afb-48be-9277-a5e91bbfe780}">
@@ -28,6 +33,7 @@
     </object>
     <object class="MixerBusEffectChain" id="{50e6c4ae-a3a2-4270-aec1-9466d1497666}"/>
     <object class="MixerBusPanner" id="{46a16afa-5981-49c2-939b-79927b5d796d}"/>
+    <object class="SingleSound" id="{8cca3686-e140-437c-99d8-3aaed650bc62}"/>
     <object class="EventMixerGroup" id="{210b1151-469c-4154-9436-afb1d2a7ae73}"/>
     <object class="MixerBusEffectChain" id="{014112de-a09c-4c30-b27b-16735b13214d}"/>
     <object class="MixerBusPanner" id="{ff6daef4-bbfc-4b6a-98a4-d02390ae0d65}"/>
@@ -37,4 +43,5 @@
     <object class="MixerBusFader" id="{18576660-5488-435f-b646-4cb0785dec86}"/>
     <object class="MixerSend" id="{1620fb2f-cd48-4613-a5e5-950b9849f870}"/>
     <object class="MixerBusFader" id="{76c4c499-3aa2-402b-829e-3de9b4c1effa}"/>
+    <object class="CompressorEffect" id="{44419a50-f814-48b4-8b1b-c0d4082eef8f}"/>
 </objects>
