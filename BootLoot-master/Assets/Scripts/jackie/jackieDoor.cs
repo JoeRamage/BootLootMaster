@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class jackieDoor : MonoBehaviour {
 
@@ -14,7 +15,9 @@ public class jackieDoor : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (overJackieDoor && Input.GetKeyDown (KeyCode.T)) {
+			SceneManager.LoadScene ("jackieHouse");
+		}
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {

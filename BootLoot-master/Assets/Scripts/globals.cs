@@ -4,6 +4,11 @@ using UnityEngine.UI;
 
 public class globals : MonoBehaviour {
 
+	public bool pod1got = false;
+	public bool pod2got = false;
+	public bool pod3got = false;
+	public bool pod4got = false;
+
 	[SerializeField]
 	private GameObject textBox;
 
@@ -32,15 +37,21 @@ public class globals : MonoBehaviour {
 
 	public bool jackieVisited = false;
 
+	void Awake() {
+		DontDestroyOnLoad(transform.gameObject);
+	}
+
     // Use this for initialization
     void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		coinTotalString = coinTotal.ToString ();
-		GameObject.Find ("coinAmountText").GetComponent<Text> ().text = coinTotalString;
+
+
+		//GameObject.Find ("coinAmountText").GetComponent<Text> ().text = coinTotalString;
 		/*
 		if (health == 5) {
 			h4Obj.SetActive(true);

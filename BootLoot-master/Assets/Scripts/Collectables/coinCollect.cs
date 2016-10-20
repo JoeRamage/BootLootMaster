@@ -15,7 +15,7 @@ public class coinCollect : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "Player") {
-			GameObject.Find("Globals").GetComponent<globals>().coinTotal = GameObject.Find("Globals").GetComponent<globals>().coinTotal + 1;
+			GameObject.Find("Globals(Clone)").GetComponent<globals>().coinTotal = GameObject.Find("Globals(Clone)").GetComponent<globals>().coinTotal + 1;
 			Destroy (transform.parent.gameObject);
 		}
 	}

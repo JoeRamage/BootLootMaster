@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
-
+	public Transform globalPos;
+	public GameObject globalPreF;
 	[SerializeField]
 	private Vector3 spawnPoint;
 

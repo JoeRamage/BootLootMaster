@@ -21,6 +21,7 @@ public class Coin : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		StartCoroutine (AnimationTimer ());
+		coinTrans = gameObject.transform;
 		endTrans = GameObject.Find ("Player").GetComponent<Transform> ().transform;
 	}
 	
@@ -41,7 +42,7 @@ public class Coin : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
-		if (other.tag == "collSuck" && GameObject.Find ("Globals").GetComponent<globals> ().powerOn) {
+		if (other.tag == "collSuck" && GameObject.Find ("Globals(Clone)").GetComponent<globals> ().powerOn) {
 			StartCoroutine (coinSuckTimer ());
 			beingSucked = true;
 		} else {

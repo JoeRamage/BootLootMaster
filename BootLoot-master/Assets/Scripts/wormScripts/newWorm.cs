@@ -47,11 +47,11 @@ public class newWorm : MonoBehaviour {
 			newWormAnimator.SetBool ("falling", false);
 		}
 
-		if (GameObject.Find ("wormPullArea").GetComponent<wormPull> ().beingSucked == true) {
-			newWormAnimator.SetBool ("sucked", true);
-		} else {
-			newWormAnimator.SetBool ("sucked", false);
-		}
+		//if (GameObject.Find ("wormPullArea").GetComponent<wormPull> ().beingSucked == true) {
+		//	newWormAnimator.SetBool ("sucked", true);
+		//} else {
+		//	newWormAnimator.SetBool ("sucked", false);
+		//}
 
 	}
 
