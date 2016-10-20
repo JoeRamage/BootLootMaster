@@ -3,6 +3,9 @@ using System.Collections;
 
 public class coinCollect : MonoBehaviour {
 
+	[FMODUnity.EventRef]
+	public string collect = "event:/sfx/coin";
+
 	// Use this for initialization
 	void Start () {
 	
@@ -16,6 +19,7 @@ public class coinCollect : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "Player") {
 			GameObject.Find("Globals(Clone)").GetComponent<globals>().coinTotal = GameObject.Find("Globals(Clone)").GetComponent<globals>().coinTotal + 1;
+			FMODUnity.RuntimeManager.PlayOneShot (collect);
 			Destroy (transform.parent.gameObject);
 		}
 	}

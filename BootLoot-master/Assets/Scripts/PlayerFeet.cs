@@ -41,19 +41,19 @@ public class PlayerFeet : MonoBehaviour {
 
 	void OnTriggerStay2D (Collider2D other){
 		if (other.tag == "music1") {
-			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState = 0.5f;
+			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState = 1.5f;
 		}
 
 		if (other.tag == "music2"){
-			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState = 1.5f; 
+			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState = 2.5f; 
 		}
 
 		if (other.tag == "music3") {
-			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState= 2.5f;
+			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState= 3.5f;
 		}
 
 		if (other.tag == "music4") {
-			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState= 3.5f;
+			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState= 4.5f;
 		}
 	}
 

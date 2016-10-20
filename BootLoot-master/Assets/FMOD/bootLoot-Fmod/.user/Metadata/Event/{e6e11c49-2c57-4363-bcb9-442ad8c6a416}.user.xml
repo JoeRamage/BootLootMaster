@@ -41,6 +41,7 @@
     <object class="MixerBusEffectChain" id="{04e46deb-fb40-45ff-bbc0-31c67a9c8fb8}"/>
     <object class="MixerBusPanner" id="{c073026d-2b7d-437c-886e-a095ff7770cd}"/>
     <object class="MixerBusFader" id="{d48779c7-d8fb-4a05-82cf-9aaac927c7cd}"/>
+    <object class="RandomizerModulator" id="{d3b235a3-53e3-42da-b2e2-6539acf308d9}"/>
     <object class="MixerBusEffectChain" id="{dbf19354-7ba6-4e51-9083-e0e80df8c4e6}"/>
     <object class="MixerBusPanner" id="{4a3ee154-9336-4b5a-b00a-159bd574ad19}"/>
     <object class="MixerBusFader" id="{8d7bb438-4ba9-4b7e-ab2f-fa2cdf27d737}"/>
