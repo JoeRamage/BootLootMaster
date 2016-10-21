@@ -45,15 +45,15 @@ public class PlayerFeet : MonoBehaviour {
 		}
 
 		if (other.tag == "music2"){
-			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState = 2.5f; 
+			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState = 5.5f; 
 		}
 
 		if (other.tag == "music3") {
-			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState= 3.5f;
+			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState= 6.5f;
 		}
 
 		if (other.tag == "music4") {
-			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState= 4.5f;
+			GameObject.Find("audioZones(Clone)").GetComponent<background>().musicState= 7.5f;
 		}
 	}
 

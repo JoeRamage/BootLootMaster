@@ -98,9 +98,6 @@
         <property name="timelockedOffset">
             <value>0.10000000000000001</value>
         </property>
-        <property name="pitch">
-            <value>11.5</value>
-        </property>
         <relationship name="fadeOutCurve">
             <destination>{2a48b26c-517b-48f2-910a-5d94dd0e4f0f}</destination>
         </relationship>

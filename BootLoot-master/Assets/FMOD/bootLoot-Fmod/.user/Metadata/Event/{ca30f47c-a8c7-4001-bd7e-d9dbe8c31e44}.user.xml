@@ -69,8 +69,8 @@
     <object class="MixerBusEffectChain" id="{c46e91c4-e772-46b4-855e-5d119debb579}"/>
     <object class="MixerBusPanner" id="{98d12877-9d07-4cae-a446-219372d73514}"/>
     <object class="MixerBusFader" id="{7277172c-bc68-4768-b77e-2f20c795d52a}"/>
-    <object class="RandomizerModulator" id="{2d6d0d9f-7309-4a85-9baa-6bdfa453177f}"/>
     <object class="ParameterCondition" id="{137f604e-f791-44bd-ae1d-34185e7731d0}"/>
+    <object class="RandomizerModulator" id="{2d6d0d9f-7309-4a85-9baa-6bdfa453177f}"/>
     <object class="MixerBusEffectChain" id="{51eb4184-52b3-4e36-b5ef-0d8bbcab1c88}"/>
     <object class="MixerBusPanner" id="{29609bd9-092b-470c-95b6-bc4da699317a}"/>
     <object class="ParameterCondition" id="{29003769-64b5-4665-833b-68ab61734ee1}"/>
@@ -84,8 +84,8 @@
     <object class="SingleSound" id="{860aa18a-8e1d-4ed7-8dfc-c27aa3f4187a}"/>
     <object class="MixerBusEffectChain" id="{c4c853dd-d0c4-476e-aefa-debbce6db061}"/>
     <object class="MixerBusPanner" id="{ca9c494c-f93a-40b5-9d8e-3969fac198bb}"/>
-    <object class="RandomizerModulator" id="{5b06e414-2a98-468b-a2ba-9cef7f0599b6}"/>
     <object class="ParameterCondition" id="{84b20d77-e9d1-46de-ac7d-0364398a20d0}"/>
+    <object class="RandomizerModulator" id="{5b06e414-2a98-468b-a2ba-9cef7f0599b6}"/>
     <object class="MixerBusEffectChain" id="{ece1caec-117e-4ad8-8b29-fef52c03568a}"/>
     <object class="MixerBusPanner" id="{21cb2a89-4be0-4891-a08e-0290d517f831}"/>
     <object class="MixerBusFader" id="{7ff48c03-86b5-4972-95e3-74ace1445b38}"/>
